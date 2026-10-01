@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunnydale School informational website">
+    <title>Sunnydale School | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home">Sunnydale School</a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content container">
+                <p class="eyebrow">WELCOME TO SUNNYDALE</p>
+                <h1>Sunnydale School</h1>
+                <p class="hero-text">
+                    Dedicated to fostering a love of learning in every student.
+                </p>
+                <a class="button" href="#events">View Upcoming Events</a>
+            </div>
+        </section>
+
+        <section id="mission" class="section">
+            <div class="container narrow">
+                <p class="section-label">OUR PURPOSE</p>
+                <h2>Mission Statement</h2>
+                <p>
+                    Our mission is to provide a quality education that prepares all
+                    children for a successful future.
+                </p>
+            </div>
+        </section>
+
+        <section id="events" class="section events-section">
+            <div class="container">
+                <p class="section-label">WHAT'S HAPPENING</p>
+                <h2>Upcoming Events</h2>
+
+                <div class="event-grid">
+                    <article class="event-card">
+                        <span class="event-date">JUNE 10</span>
+                        <h3>Science Fair</h3>
+                        <p>Explore student projects and discover exciting ideas in science.</p>
+                        <span class="event-type">Indoor Event</span>
+                    </article>
+
+                    <article class="event-card outdoor">
+                        <span class="event-date">JUNE 15</span>
+                        <h3>Art Exhibition</h3>
+                        <p>View creative artwork and celebrate the talents of our students.</p>
+                        <span class="event-type">Outdoor Event</span>
+                    </article>
+
+                    <article class="event-card outdoor">
+                        <span class="event-date">JUNE 20</span>
+                        <h3>Sports Day</h3>
+                        <p>Enjoy a day of friendly competition, teamwork, and school spirit.</p>
+                        <span class="event-type">Outdoor Event</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container contact-grid">
+                <div>
+                    <p class="section-label">GET IN TOUCH</p>
+                    <h2>Contact Us</h2>
+                    <p>
+                        Have a question or want to learn more about Sunnydale School?
+                        Send us a message.
+                    </p>
+
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> info@sunnydaleschool.com</p>
+                        <p><strong>Phone:</strong> 555-1234</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                    <button class="button" type="submit">Send Message</button>
+                    <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Sunnydale School. Educational project.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
